@@ -1,0 +1,7 @@
+
+requests
+beautifulsoup4
+pyTelegramBotAPI
+pytelegrambotapi
+python-telegram-bot
+install beautifulsoup4
