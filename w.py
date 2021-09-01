@@ -1,5 +1,3 @@
-import flask
-from flask import Flask, request
 import sys
 import os
 import telebot
@@ -9,7 +7,6 @@ import time
 import requests
 import telebot
 from telebot import util
-import pickle
 API_KEY = '1961681182:AAEsmCRAlL9hovXxVpuaW63xC98cDOGlfsc'
 bot = telebot.TeleBot(API_KEY)
 
