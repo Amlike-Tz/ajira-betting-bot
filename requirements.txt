@@ -8,7 +8,6 @@ python3
 
 
 
-requests
 pyTelegramBotAPI
 pytelegrambotapi
 python-telegram-bot
