@@ -2,7 +2,7 @@ import sys
 import os
 import telebot
 import urllib.request
-#import bs4 as bs
+import bs4 as bs
 import time
 import requests
 import telebot
