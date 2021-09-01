@@ -4,10 +4,3 @@ pyTelegramBotAPI==4.0.0
 bs4
 python
 python3
-
-
-
-
-pyTelegramBotAPI
-pytelegrambotapi
-python-telegram-bot
