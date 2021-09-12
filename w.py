@@ -75,7 +75,7 @@ for am in  you3:
     you3 = am.text
     you2 = am.text
     you2 = you2.format()
-    lines = '\n Team Sababu ya kushinda ama ku droo: ' + you3
+    lines = '\n Kwasababu: ' + you3
     file = open("saba.txt", "a")
     file.write(lines)
     file.close()
