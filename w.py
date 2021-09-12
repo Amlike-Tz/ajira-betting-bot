@@ -11,7 +11,11 @@ API_KEY = '1961681182:AAEsmCRAlL9hovXxVpuaW63xC98cDOGlfsc'
 bot = telebot.TeleBot(API_KEY)
 
 
-os.system("rm -r shinda.txt && rm -r aji.txt && rm -r time.txt && rm -r saba.txt && rm -r rea.txt")
+os.system("rm  rea.txt")
+os.system("rm  aji.txt")
+os.system("rm  time.txt")
+os.system("rm  saba.txt")
+os.system("rm  shinda.txt")
 lenk = urllib.request.urlopen('https://tbet.co.tz/mchezo/mpira-wa-miguu/matokeo')
 
 #salting
@@ -50,9 +54,9 @@ for am in  you2:
     you3 = am.text
     you2 = am.text
     you2 = you2.format()
-    line = '\n Team Itakayoshinda: ' + you2
+    line = '\n mkeka: ' + you2 + '\n'
     file = open("rea.txt", "a")
-    file.write(line)
+    file.write(line.replace("Win", " Win  "))
     file.close()
    # print (lines)
 
@@ -109,7 +113,7 @@ for message in lines:
 
      @bot.message_handler(commands=['developer', 'owner',])
      def hi_sender(message):
-          bot.send_message(message.chat.id, "Hmmm!!!🤪!! \nUnatak Kuchat na AmlikeTz Owner of Ajira And Betting Bot✅.\n oky click the link To message Him.\n  https://cutt.ly/mQxVqJo\n.Thanky")
+          bot.send_message(message.chat.id, "Hmmm!!! \nUnatak Kuchat na AmlikeTz Owner of Ajira And Betting Bot✅.\n oky click the link To message Him.\n  https://cutt.ly/mQxVqJo\n.Thanky")
      
      @bot.message_handler(commands=['online', 'Online',])
      def hi_sender(message):
@@ -117,7 +121,7 @@ for message in lines:
      
      @bot.message_handler(commands=['Trending', 'trending',])
      def hi_sender(message):
-          bot.send_message(message.chat.id, "Hmmm!!!🤪!!  Kuacha cennection ya yanga na DarkAngel Hackers group Kukamatwa hakuna trending story ingne!!!\n or go and search google!!!")
+          bot.send_message(message.chat.id, "Hmmm!!!  No trending story sir/miss !!!\n or go and search google!!!")
      
      @bot.message_handler(commands=['next', 'upcoming',])
      def hi_sender(message):
