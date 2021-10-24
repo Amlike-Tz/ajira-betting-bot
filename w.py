@@ -6,6 +6,7 @@ import bs4 as bs
 import time
 import requests
 import telebot
+from telebot import types
 from telebot import util
 API_KEY = '1961681182:AAEsmCRAlL9hovXxVpuaW63xC98cDOGlfsc'
 bot = telebot.TeleBot(API_KEY)
