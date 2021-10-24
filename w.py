@@ -112,7 +112,7 @@ for message in lines:
      def hi_sender(message):
           bot.send_message(message.chat.id, "Hi There🤪!! \nWelcome!! Ili kuweza kuona post za nafasi za kazi Ama kuweza kuona siku ilipostiwa Angalia Command Zifuatazo✅.\n \post :Kuona Nafasi za kazi.\n /show : Kuona Nafasi za kazi pia.\n /time : Kuona siku zilizotangwaza,\n Note; mda wa siku ilotangazwa umepangwa kulingana na mtiririko wa hizo list za kazi. \n  /help .: kuludi kwenye muongozo mkuu")
 
-     @bot.message_handler(commands=['start'])
+     @bot.message_handler(commands=['developer'])
      def start(message):
           key = types.InlineKeyboardMarkup()
           cal = types.InlineKeyboardButton(text='Chat with Me Now', url='https://bit.ly/3E7QUZx')
