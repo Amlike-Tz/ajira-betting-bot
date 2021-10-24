@@ -105,15 +105,18 @@ for message in lines:
 
      @bot.message_handler(commands=['/help', 'help', 'help', 'HELP',])
      def hi_sender(message):
-          bot.send_message(message.chat.id, "Am Ajira and Betting TippsBot. zifuatazo ni List Of commands amaa vitu ambavyo naweza Kukufanyia.\n\n  /help : how to use me\n\n  /mkeka : kuweza kuona mkeka wa bure\n\n  /sababu : Sababu ya kuchagua hizo team \n\n  /matokeo  or  /result  : kuangalia matokeo ya match hi ni kwa tim zilizoshinda tu!!  \n\n   /Online : kuangalia kama niko online\n\n   /ajira : Taarifa za ajira mpya \n\n   /trending : Habari zinazotrend Now.\n\n   /developer  or  /owner  : kuongea na owner wa Ajira And Betting Bot\n\n  /next : kuona upcomming features za hii Bot.\n\n   ✅Ajira And Betting-Tips")
+          bot.send_message(message.chat.id, "Am Ajira and Betting TippsBot. zifuatazo ni List Of commands amaa vitu ambavyo naweza Kukufanyia.\n\n  /help : how to use me\n\n  /mkeka : kuweza kuona mkeka wa bure\n\n  /sababu : Sababu ya kuchagua hizo team \n\n  /matokeo  or  /result  : kuangalia matokeo ya match hi ni kwa tim zilizoshinda tu!!  \n\n   /Online : kuangalia kama niko online\n\n   /ajira : Taarifa za ajira mpya \n\n   /trending : Habari zinazotrend Now.\n\n   /developer : kuongea na owner wa Ajira And Betting Bot\n\n  /next : kuona upcomming features za hii Bot.\n\n   ✅Ajira And Betting-Tips")
 
      @bot.message_handler(commands=['ajira', 'job', 'kazi', 'Ajira', 'Kazi',])
      def hi_sender(message):
           bot.send_message(message.chat.id, "Hi There🤪!! \nWelcome!! Ili kuweza kuona post za nafasi za kazi Ama kuweza kuona siku ilipostiwa Angalia Command Zifuatazo✅.\n \post :Kuona Nafasi za kazi.\n /show : Kuona Nafasi za kazi pia.\n /time : Kuona siku zilizotangwaza,\n Note; mda wa siku ilotangazwa umepangwa kulingana na mtiririko wa hizo list za kazi. \n  /help .: kuludi kwenye muongozo mkuu")
 
-     @bot.message_handler(commands=['developer', 'owner',])
-     def hi_sender(message):
-          bot.send_message(message.chat.id, "Hmmm!!! \nUnatak Kuchat na AmlikeTz Owner of Ajira And Betting Bot✅.\n oky click the link To message Him.\n  https://cutt.ly/mQxVqJo\n.Thanky")
+     @bot.message_handler(commands=['start'])
+     def start(message):
+          key = types.InlineKeyboardMarkup()
+          cal = types.InlineKeyboardButton(text='Chat with Me Now', url='https://bit.ly/3E7QUZx')
+          key.add(cal)
+          bot.send_message(message.chat.id, text='AmlikeTz', reply_markup=key)
      
      @bot.message_handler(commands=['online', 'Online',])
      def hi_sender(message):
