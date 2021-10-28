@@ -100,6 +100,8 @@ for text in splitted_text:
           bot.send_message(message.chat.id, text)
 
 
+for i in range(3):
+
      @bot.message_handler(commands=['Hi', 'hello', 'Hellow', 'mambo', 'start', 'hi', 'Start'])
      def hi_sender(message):
           bot.send_message(message.chat.id, "Hi There🤪!! \nWelcome to AmlikeTz Ajira And Betting Bot✅.Nin niweze kukusaidia?? ama  KUWEZA kuona List of Commands Andika neno\n /help .Thankyou")
