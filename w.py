@@ -8,7 +8,7 @@ import requests
 import telebot
 from telebot import types
 from telebot import util
-API_KEY = '1961681182:AAEsmCRAlL9hovXxVpuaW63xC98cDOGlfsc'
+API_KEY = '1961681182:AAGXXKyBjHbmra2250HklVD8JgOf_UHmBgc'
 bot = telebot.TeleBot(API_KEY)
 
 
