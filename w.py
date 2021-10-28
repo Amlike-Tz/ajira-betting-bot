@@ -8,7 +8,7 @@ import requests
 import telebot
 from telebot import types
 from telebot import util
-API_KEY = '1961681182:AAGXXKyBjHbmra2250HklVD8JgOf_UHmBgc'
+API_KEY = '1961681182:AAF_Ip9OGDFto5UR4zNi04-3UAyWQyQYWeU'
 bot = telebot.TeleBot(API_KEY)
 
 
@@ -99,7 +99,7 @@ for text in splitted_text:
      def hi_sender(message):
           bot.send_message(message.chat.id, text)
 
-for message in lines:
+
      @bot.message_handler(commands=['Hi', 'hello', 'Hellow', 'mambo', 'start', 'hi', 'Start'])
      def hi_sender(message):
           bot.send_message(message.chat.id, "Hi There🤪!! \nWelcome to AmlikeTz Ajira And Betting Bot✅.Nin niweze kukusaidia?? ama  KUWEZA kuona List of Commands Andika neno\n /help .Thankyou")
