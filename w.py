@@ -9,7 +9,7 @@ import telebot
 from telebot import types 
 from telebot import util
 
-API_KEY = '1961681182:AAF_Ip9OGDFto5UR4zNi04-3UAyWQyQYWeU'
+API_KEY = '1961681182:AAHYcS9blLWkQgAfwLGkzEOfT_WQOxfUE6Y'
 
 bot = telebot.TeleBot(API_KEY)
 
