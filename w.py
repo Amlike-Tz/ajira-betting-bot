@@ -146,7 +146,7 @@ for i in range(3):
 # Apa ndo napokea req from telgram form 4
 @bot.message_handler(commands=['form4'])
 def send_welcome(message):
-    msg = bot.reply_to(message, "Hi there, Andika Namba ya Shule Mfano S.3623")
+    msg = bot.reply_to(message, "Hi there, Andika Namba ya Shule Mfano S3623")
     bot.register_next_step_handler(msg, process_fetch_step)
 
 def process_fetch_step(message):
@@ -182,7 +182,7 @@ def process_fetch_step(message):
 # Apa ndo napokea req from telgram  form 2
 @bot.message_handler(commands=['form2'])
 def send_welcome(message):
-    msg = bot.reply_to(message, "Hi there, Andika Namba ya Shule Mfano S.3623")
+    msg = bot.reply_to(message, "Hi there, Andika Namba ya Shule Mfano S3623")
     bot.register_next_step_handler(msg, process_fetch1_step)
 
 def process_fetch1_step(message):
