@@ -169,7 +169,7 @@ def process_fetch_step(message):
                           key = types.InlineKeyboardMarkup()
                           cal = types.InlineKeyboardButton(text='Click Here', url=line6)
                           key.add(cal)
-                          bot.send_message(message.chat.id, text='By @Amlike-Tz', reply_markup=key)
+                          bot.send_message(message.chat.id, text='By @AmlikeTz', reply_markup=key)
            else:
                bot.send_message(chat_id, "check your school number and Try Again")
 
@@ -204,7 +204,7 @@ def process_fetch1_step(message):
                           key = types.InlineKeyboardMarkup()
                           cal = types.InlineKeyboardButton(text='Click Here', url=line6)
                           key.add(cal)
-                          bot.send_message(message.chat.id, text='By @Amlike-Tz', reply_markup=key)
+                          bot.send_message(message.chat.id, text='By @AmlikeTz', reply_markup=key)
            else:
                bot.send_message(chat_id, "check your school number and Try Again")
 
