@@ -138,7 +138,7 @@ for i in range(3):
      
      @bot.message_handler(commands=['necta',])
      def hi_sender(message):
-          bot.send_message(message.chat.id, "\n /form4: kuweza kuona matokeo ya form 4 mwaka 2021 \n\n form2: kuweza kuona matokeo ya form 2 mwaka 2021 \n")
+          bot.send_message(message.chat.id, "\n\n /form4: kuweza kuona matokeo ya form 4 mwaka 2021 \n\n /form2: kuweza kuona matokeo ya form 2 mwaka 2021 \n\n")
 
 
 
