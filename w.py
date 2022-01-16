@@ -110,7 +110,7 @@ for i in range(3):
 
      @bot.message_handler(commands=['/help', 'help', 'help', 'HELP',])
      def hi_sender(message):
-          bot.send_message(message.chat.id, "Am Ajira and Betting TippsBot. zifuatazo ni List Of commands amaa vitu ambavyo naweza Kukufanyia.\n\n  /help : how to use me\n\n  /mkeka : kuweza kuona mkeka wa bure\n\n  /sababu : Sababu ya kuchagua hizo team \n\n  /matokeo  or  /result  : kuangalia matokeo ya match hi ni kwa tim zilizoshinda tu!!  \n\n   /Online : kuangalia kama niko online\n\n   /ajira : Taarifa za ajira mpya \n\n   /trending : Habari zinazotrend Now.\n\n   /developer : kuongea na owner wa Ajira And Betting Bot\n\n  /next : kuona upcomming features za hii Bot.\n\n   ✅Ajira And Betting-Tips")
+          bot.send_message(message.chat.id, "Am Ajira and Betting TippsBot. zifuatazo ni List Of commands amaa vitu ambavyo naweza Kukufanyia.\n\n  /help : how to use me\n\n  /mkeka : kuweza kuona mkeka wa bure\n\n  /sababu : Sababu ya kuchagua hizo team \n\n  /matokeo  or  /result  : kuangalia matokeo ya match hi ni kwa tim zilizoshinda tu!!  \n\n   /Online : kuangalia kama niko online\n\n   /ajira : Taarifa za ajira mpya \n\n   /trending : Habari zinazotrend Now.\n\n   /necta: kuweza kuona matokeo ya form4 na form2 mwaka 2021 \n\n /developer : kuongea na owner wa Ajira And Betting Bot\n\n  /next : kuona upcomming features za hii Bot.\n\n   ✅Ajira And Betting-Tips")
 
      @bot.message_handler(commands=['ajira', 'job', 'kazi', 'Ajira', 'Kazi',])
      def hi_sender(message):
@@ -134,11 +134,82 @@ for i in range(3):
      @bot.message_handler(commands=['next', 'upcoming',])
      def hi_sender(message):
           bot.send_message(message.chat.id, "\n\n  Next added features of this bot will be more amazing than anoying please keep in touch so that to be first one to use that pretty cool feature buddy!")
+      
+     
+     @bot.message_handler(commands=['necta',])
+     def hi_sender(message):
+          bot.send_message(message.chat.id, "\n /form4: kuweza kuona matokeo ya form 4 mwaka 2021 \n\n form2: kuweza kuona matokeo ya form 2 mwaka 2021 \n")
 
 
 
 
+# Apa ndo napokea req from telgram form 4
+@bot.message_handler(commands=['form4'])
+def send_welcome(message):
+    msg = bot.reply_to(message, "Hi there, Andika Namba ya Shule Mfano S.3623")
+    bot.register_next_step_handler(msg, process_fetch_step)
 
+def process_fetch_step(message):
+    try:
+        chat_id = message.chat.id
+        req = message.text
+        am = open("Amlike_4_School_Link.txt", "r+")
+        am2 = am.readlines()
+        req1 = req.lower()
+#        bot.send_message(chat_id, am2)
+        for mee in range(1):
+           if len(req1) == 5:
+               for line in am2:
+                   line1 = str(line)
+                   line2 = line1
+                   line3 = line2.lower()
+                   line4 = line3.replace(" ", "")
+                   line6 = line4.replace("\n", "")
+                   if req1  in line6:
+                          key = types.InlineKeyboardMarkup()
+                          cal = types.InlineKeyboardButton(text='Click Here', url=line6)
+                          key.add(cal)
+                          bot.send_message(message.chat.id, text='By @Amlike-Tz', reply_markup=key)
+           else:
+               bot.send_message(chat_id, "check your school number and Try Again")
+
+    except Exception as e:
+        bot.reply_to(message,'sorrry Something went Wrong Please Check Your School  Number And Try Again🙏')
+
+
+
+
+# Apa ndo napokea req from telgram  form 2
+@bot.message_handler(commands=['form2'])
+def send_welcome(message):
+    msg = bot.reply_to(message, "Hi there, Andika Namba ya Shule Mfano S.3623")
+    bot.register_next_step_handler(msg, process_fetch1_step)
+
+def process_fetch1_step(message):
+    try:
+        chat_id = message.chat.id
+        req = message.text
+        am1 = open("Amlike_2_School_Link.txt", "r+")
+        am3 = am1.readlines()
+        req2 = req.upper()
+        for mee in range(1):
+           if len(req2) == 5:
+               for line in am3:
+                   line1 = str(line)
+                   line2 = line1
+                   line3 = line2
+                   line4 = line3.replace(" ", "")
+                   line6 = line4.replace("\n", "")
+                   if req2  in line6:
+                          key = types.InlineKeyboardMarkup()
+                          cal = types.InlineKeyboardButton(text='Click Here', url=line6)
+                          key.add(cal)
+                          bot.send_message(message.chat.id, text='By @Amlike-Tz', reply_markup=key)
+           else:
+               bot.send_message(chat_id, "check your school number and Try Again")
+
+    except Exception as e:
+        bot.reply_to(message,'sorrry Something went Wrong Please Check Your School  Number And Try Again🙏')
 
 
 
