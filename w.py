@@ -201,10 +201,14 @@ def process_fetch1_step(message):
                    line4 = line3.replace(" ", "")
                    line6 = line4.replace("\n", "")
                    if req2  in line6:
-                          key = types.InlineKeyboardMarkup()
                           cal = types.InlineKeyboardButton(text='Click Here', url=line6)
                           key.add(cal)
                           bot.send_message(message.chat.id, text='By @AmlikeTz', reply_markup=key)
+                          key = types.InlineKeyboardMarkup()
+                           
+                   else:
+                        bot.send_message(chat_id, "school number NOT FOUND sorry check it and Try Again")
+                 
            else:
                bot.send_message(chat_id, "check your school number and Try Again")
 
