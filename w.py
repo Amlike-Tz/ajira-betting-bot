@@ -206,8 +206,8 @@ def process_fetch1_step(message):
                           bot.send_message(message.chat.id, text='By @AmlikeTz', reply_markup=key)
                           key = types.InlineKeyboardMarkup()
                            
-                   else:
-                        bot.send_message(chat_id, "school number NOT FOUND sorry check it and Try Again")
+                #   else:
+                 #       bot.send_message(chat_id, "school number NOT FOUND sorry check it and Try Again")
                  
            else:
                bot.send_message(chat_id, "check your school number and Try Again")
